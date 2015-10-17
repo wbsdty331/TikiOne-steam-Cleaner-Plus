@@ -1,16 +1,19 @@
 
 # TikiOne Steam Cleaner Plus
 
-Tikione Steam Cleaner is an open source and free software written in Java 8 and helps you to find and remove all games's redistribuable packages downloaded by **Steam** (http://store.steampowered.com). For MS Windows only.
+Tikione Steam Cleaner is an open source and free software written in Java 8 and helps you to find and remove all games's redistribuable packages downloaded by **Steam** (http://store.steampowered.com). For MS Windows only.、
+
+Support Windows XP/Vista/7/8/8.1/10 with JDK [Click to Download](http://www.java.com/download/).
+
+If you want to Build this Project,Please Download JDK8.
 
 # Download installer
 
 TikiOne Steam Cleaner installer is hosted on [Releases](https://github.com/wbsdty331/TikiOne-steam-Cleaner-Plus/releases).
 
+## Build, test and package [Thanks for Jonathan Lermitage]
 
-## Build, test and package
-
-TikiOne Steam Cleaner is built with [NetBeans](http://netbeans.org) and the latest version of Oracle JDK8.
+TikiOne Steam Cleaner is built with [NetBeans 8](http://netbeans.org) and the latest version of Oracle JDK8.
 
 To build the project:
 
@@ -30,9 +33,7 @@ To bundle a JVM (version 8 or better), copy it into a "jre" folder in the "dist2
 
 ## Contact
 
-You can ask questions, share ideas or insult me by email (<jonathan.lermitage@gmail.com>) or discuss via [Twitter](https://twitter.com/JLermitage).
-
-中文用户请发送到(<wbsdty331@126.com>)，最好说明产生问题的时间，系统平台和截图，以便于核实。
+You can ask questions, share ideas or insult me by email (<wbsdty331@126.com>)
 
 ## Contributors
 * Dmitry Bolotov (Дмитрий Болотов): Russian and Ukrainian translations
