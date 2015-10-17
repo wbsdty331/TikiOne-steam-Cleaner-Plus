@@ -2,9 +2,6 @@
 
 Tikione Steam Cleaner is an open source and free software written in Java 8 and helps you to find and remove all games's redistribuable packages downloaded by **Steam** (http://store.steampowered.com). For MS Windows only.
 
-# 中文用户须知
-1.不适用于Dota2国服客户端。
-2.Steam目录最好不要带中文。
 
 # Download installer
 
@@ -30,6 +27,7 @@ To bundle a JVM (version 8 or better), copy it into a "jre" folder in the "dist2
 ## Author
 * Jonathan Lermitage (<jonathan.lermitage@gmail.com>)
 * wbsdty331 (<wbsdty331@126.com>)
+
 ## Contact
 
 You can ask questions, share ideas or insult me by email (<jonathan.lermitage@gmail.com>) or discuss via [Twitter](https://twitter.com/JLermitage).
