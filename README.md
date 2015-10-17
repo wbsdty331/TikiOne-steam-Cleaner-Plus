@@ -35,21 +35,6 @@ To bundle a JVM (version 8 or better), copy it into a "jre" folder in the "dist2
 
 You can ask questions, share ideas or insult me by email (<wbsdty331@126.com>)
 
-## Contributors
-* Dmitry Bolotov (Дмитрий Болотов): Russian and Ukrainian translations
-* Boris Klein: German translation
-* Ulli Kunz: German translation
-* Hauwertlhaufn: German translation
-* Zsolt Brechler: Hungarian translation
-* Piotr Swat: Polish translation
-* wbsdty331: Simplified Chinese translation
-* Pedro Henrique Viegas Diniz: Portuguese translation
-* "ZoSH": Spanish translation
-* Petr Kudlička: redist detection improvements
-* Brian Huqueriza: redist detection improvements
-* Antti Mieskolainen: redist detection improvements, GOG and Origin support
-* Members of the [CanardPC forum](http://forum.canardpc.com), for their support and cheerfulness
-
 ## History
 [changelog](https://github.com/wbsdty331/TikiOne-steam-Cleaner-Plus/blob/master/CHANGELOG.md).
 
