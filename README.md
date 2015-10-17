@@ -25,6 +25,7 @@ To bundle a JVM (version 8 or better), copy it into a "jre" folder in the "dist2
 
 ## Author
 * Jonathan Lermitage (<jonathan.lermitage@gmail.com>)
+* wbsdty331 (<wbsdty331@gmail.com>)
 
 ## Contact
 
@@ -39,6 +40,7 @@ You can ask questions, share ideas or insult me by email (<jonathan.lermitage@gm
 * Piotr Swat: Polish translation
 * Pedro Henrique Viegas Diniz: Portuguese translation
 * "ZoSH": Spanish translation
+* wbsdty331 : Simplified Chinese translation
 * Petr Kudlička: redist detection improvements
 * Brian Huqueriza: redist detection improvements
 * Antti Mieskolainen: redist detection improvements, GOG and Origin support
