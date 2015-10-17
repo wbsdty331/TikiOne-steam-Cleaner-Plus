@@ -5,8 +5,6 @@
 
 TikiOne Steam Cleaner installer is hosted on [GitHub releases](https://github.com/jonathanlermitage/tikione-steam-cleaner/releases).
 
-**Information about Sourceforge**: up to version 2.4.6, TikiOne Steam Cleaner was hosted on SourceForge. I have decided to leave this website to prefer GitHub. Starting from next version, I'll use GitHub only.
-
 ## Build, test and package
 
 TikiOne Steam Cleaner is built with [NetBeans](http://netbeans.org) and the latest version of Oracle JDK8.
@@ -31,7 +29,7 @@ To bundle a JVM (version 8 or better), copy it into a "jre" folder in the "dist2
 
 You can ask questions, share ideas or insult me by email (<jonathan.lermitage@gmail.com>) or discuss via [Twitter](https://twitter.com/JLermitage).
 
-中文问题请发送到(<wbsdty331@gmail.com>)，或者[Twitter](https://twitter.com/wbsdty331).
+中文问题请发送到(<wbsdty331@126.com>)，或者[Twitter@我](https://twitter.com/wbsdty331).
 
 ## Contributors
 * Dmitry Bolotov (Дмитрий Болотов): Russian and Ukrainian translations
@@ -55,7 +53,3 @@ I'm working on this software since Janurary 2012. Here is the full [changelog](h
 ## License
 
 LGPL License
-
-## Donations
-
-You can help me with a PayPal donation ([TikiOne, jonathan@lermitage.biz](http://sourceforge.net/p/tikione/donate/)).
