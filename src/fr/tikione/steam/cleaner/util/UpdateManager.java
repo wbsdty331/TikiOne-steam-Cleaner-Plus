@@ -1,10 +1,8 @@
 package fr.tikione.steam.cleaner.util;
-
 import fr.tikione.ini.InfinitiveLoopException;
-import fr.tikione.steam.cleaner.Main;
-import fr.tikione.steam.cleaner.Version;
 import fr.tikione.steam.cleaner.util.conf.Config;
 import java.awt.Desktop;
+import fr.tikione.steam.cleaner.Version;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
