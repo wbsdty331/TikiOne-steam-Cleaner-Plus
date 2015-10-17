@@ -1,9 +1,0 @@
-
-  The TikiOne website is alive thanks to your donations only
-  (I won't introduce ads or toolbars like Ask.com: TikiOne is
-  free and open source, I'll never make money with it).
-
-  Check http://sourceforge.net/p/tikione/donate for PayPal donations.
-  Thx!
-
-  ~Jonathan Lermitage <jonathan.lermitage@gmail.com>
