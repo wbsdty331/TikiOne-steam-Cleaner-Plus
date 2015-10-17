@@ -20,11 +20,10 @@ import java.net.UnknownHostException;
  */
 public class UpdateManager {
 	
-	private static final String DOWNLOAD_BASE = "https://github.com/jonathanlermitage/tikione-steam-cleaner/releases/download/";
-	private static final String DOWNLOAD_REGULAR = DOWNLOAD_BASE + "v%s/TikiOne.Steam.Cleaner.%s.Setup.exe";
-	private static final String DOWNLOAD_REGULAR_NOJRE = DOWNLOAD_BASE + "v%s/TikiOne.Steam.Cleaner.%s.Setup.NoJRE.exe";
-	private static final String DOWNLOAD_PORTABLE = DOWNLOAD_BASE + "v%s/TikiOne.Steam.Cleaner.%s.Portable.zip";
-	private static final String DOWNLOAD_PORTABLE_NOJRE = DOWNLOAD_BASE + "v%s/TikiOne.Steam.Cleaner.%s.Portable.NoJRE.zip";
+	private static final String DOWNLOAD_BASE = "https://github.com/wbsdty331/TikiOne-steam-Cleaner-Plus/releases";
+	
+	
+	private static final String DOWNLOAD_PORTABLE_NOJRE = DOWNLOAD_BASE + "v%s/TikiOne.Steam.Cleaner.Plus.%s.Portable.NoJRE.zip";
 
 	/** Suppresses default constructor, ensuring non-instantiability. */
 	private UpdateManager() {
@@ -105,19 +104,8 @@ public class UpdateManager {
 	public static void extBrowserGetLatestVersion() {
 		String version = normalizeVersionStr(getLatestVersion());
 		String download;
-		if (Main.ARG_PORTABLE) {
-			if (Main.BUNDLED_JVM) {
-				download = DOWNLOAD_PORTABLE;
-			} else {
-				download = DOWNLOAD_PORTABLE_NOJRE;
-			}
-		} else {
-			if (Main.BUNDLED_JVM) {
-				download = DOWNLOAD_REGULAR;
-			} else {
-				download = DOWNLOAD_REGULAR_NOJRE;
-			}
-		}
+	        download = DOWNLOAD_PORTABLE_NOJRE;
+		
 		extBrowser(String.format(download, version, version));
 	}
 
