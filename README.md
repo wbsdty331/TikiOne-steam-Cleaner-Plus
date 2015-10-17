@@ -1,9 +1,21 @@
-由于作者已经停止更新，经作者同意，本人接手了开发.
+**:zzz: FYI, development is stopped. I needed funds to port Steam Cleaner to native code. Kickstarter and Patreon campaigns simply failed. Please consider using CCleaner with CCenhancer instead. :zzz:**
 
-#Tikione Steam Cleaner Plus
-## Download installer
+# TikiOne Steam Cleaner
+
+_The best companion of Steam users - [Download latest version **here**](https://github.com/jonathanlermitage/tikione-steam-cleaner/releases)_
+
+Tikione Steam Cleaner is an open source and free software written in Java 8 and helps you to find and remove all games's redistribuable packages downloaded by **Steam** (http://store.steampowered.com). For MS Windows only.
+
+**GOG** (GalaxyClient) and Electronic Arts **Origin** support under development.
+
+![Screenshot](https://raw.githubusercontent.com/jonathanlermitage/tikione-steam-cleaner/master/src/fr/tikione/steam/cleaner/gui/tikione-steam-cleaner-banner.png)
+
+
+# Download installer
 
 TikiOne Steam Cleaner installer is hosted on [GitHub releases](https://github.com/jonathanlermitage/tikione-steam-cleaner/releases).
+
+**Information about Sourceforge**: up to version 2.4.6, TikiOne Steam Cleaner was hosted on SourceForge. I have decided to leave this website to prefer GitHub. Starting from next version, I'll use GitHub only.
 
 ## Build, test and package
 
@@ -23,13 +35,10 @@ To bundle a JVM (version 8 or better), copy it into a "jre" folder in the "dist2
 
 ## Author
 * Jonathan Lermitage (<jonathan.lermitage@gmail.com>)
-* wbsdty331 (<wbsdty331@gmail.com>)
 
 ## Contact
 
 You can ask questions, share ideas or insult me by email (<jonathan.lermitage@gmail.com>) or discuss via [Twitter](https://twitter.com/JLermitage).
-
-中文问题请发送到(<wbsdty331@126.com>)，或者[Twitter@我](https://twitter.com/wbsdty331).
 
 ## Contributors
 * Dmitry Bolotov (Дмитрий Болотов): Russian and Ukrainian translations
@@ -40,7 +49,6 @@ You can ask questions, share ideas or insult me by email (<jonathan.lermitage@gm
 * Piotr Swat: Polish translation
 * Pedro Henrique Viegas Diniz: Portuguese translation
 * "ZoSH": Spanish translation
-* wbsdty331 : Simplified Chinese translation
 * Petr Kudlička: redist detection improvements
 * Brian Huqueriza: redist detection improvements
 * Antti Mieskolainen: redist detection improvements, GOG and Origin support
@@ -53,3 +61,7 @@ I'm working on this software since Janurary 2012. Here is the full [changelog](h
 ## License
 
 LGPL License
+
+## Donations
+
+You can help me with a PayPal donation ([TikiOne, jonathan@lermitage.biz](http://sourceforge.net/p/tikione/donate/)).
