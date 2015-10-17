@@ -2,7 +2,6 @@
 
 ### 2.9.1 (2015/09/19) JAVA8
 * removed links to Kickstarter and Patreon campaigns (they miserably failed).
-* this is the last version; project is now dead.
 
 ### 2.9.0 (2015/08/03) JAVA8
 * added links to Patreon and Kickstarter campaigns.
