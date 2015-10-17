@@ -562,17 +562,17 @@ public class JFrameMain extends JFrame {
         GroupLayout jPanelListLayout = new GroupLayout(jPanelList);
         jPanelList.setLayout(jPanelListLayout);
         jPanelListLayout.setHorizontalGroup(jPanelListLayout.createParallelGroup(Alignment.LEADING)
-            .addGroup(Alignment.TRAILING, jPanelListLayout.createSequentialGroup()
+            .addGroup(jPanelListLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanelListLayout.createParallelGroup(Alignment.TRAILING)
-                    .addComponent(jScrollPane1, GroupLayout.DEFAULT_SIZE, 666, Short.MAX_VALUE)
+                .addGroup(jPanelListLayout.createParallelGroup(Alignment.LEADING)
+                    .addComponent(jScrollPane1)
                     .addGroup(jPanelListLayout.createSequentialGroup()
                         .addComponent(jButtonReloadRedistList)
                         .addPreferredGap(ComponentPlacement.RELATED)
                         .addComponent(jButtonStopSearch, GroupLayout.PREFERRED_SIZE, 29, GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(ComponentPlacement.RELATED, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButtonRemoveRedistItemsFromDisk)))
-                .addContainerGap())
+                        .addPreferredGap(ComponentPlacement.RELATED, 311, Short.MAX_VALUE)
+                        .addComponent(jButtonRemoveRedistItemsFromDisk)
+                        .addContainerGap())))
         );
         jPanelListLayout.setVerticalGroup(jPanelListLayout.createParallelGroup(Alignment.LEADING)
             .addGroup(Alignment.TRAILING, jPanelListLayout.createSequentialGroup()
@@ -582,8 +582,7 @@ public class JFrameMain extends JFrame {
                     .addComponent(jButtonRemoveRedistItemsFromDisk)
                     .addComponent(jButtonStopSearch))
                 .addPreferredGap(ComponentPlacement.RELATED)
-                .addComponent(jScrollPane1, GroupLayout.DEFAULT_SIZE, 118, Short.MAX_VALUE)
-                .addContainerGap())
+                .addComponent(jScrollPane1, GroupLayout.DEFAULT_SIZE, 128, Short.MAX_VALUE))
         );
 
         jLabelCustomFolders.setFont(new Font("Dialog", 0, 13)); // NOI18N
@@ -775,7 +774,7 @@ public class JFrameMain extends JFrame {
         layout.setHorizontalGroup(layout.createParallelGroup(Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jToolBarMain, GroupLayout.PREFERRED_SIZE, 274, GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(ComponentPlacement.RELATED, 179, Short.MAX_VALUE)
+                .addPreferredGap(ComponentPlacement.RELATED, 195, Short.MAX_VALUE)
                 .addComponent(jButtonGithub, GroupLayout.PREFERRED_SIZE, 29, GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(ComponentPlacement.RELATED)
                 .addComponent(jButtonReddit, GroupLayout.PREFERRED_SIZE, 29, GroupLayout.PREFERRED_SIZE)

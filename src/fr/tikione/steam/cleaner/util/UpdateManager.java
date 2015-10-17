@@ -125,7 +125,7 @@ public class UpdateManager {
 	 * Launch the external web browser with the TikiOne Steam Cleaner changelog file URL (on the GitHub.com website).
 	 */
 	public static void extBrowserGetLatestChangelog() {
-		extBrowser("https://github.com/jonathanlermitage/tikione-steam-cleaner/blob/master/CHANGELOG.md");
+		extBrowser("https://git.oschina.net/wbsdty331/Tikione-Steam-Cleaner-Plus/blob/master/CHANGELOG.md");
 	}
 
 	/**
