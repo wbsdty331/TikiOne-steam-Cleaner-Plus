@@ -1,17 +1,19 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-# TikiOne Steam Cleaner
 
-Tikione Steam Cleaner is an open source and free software written in Java 8 and helps you to find and remove all games's redistribuable packages downloaded by **Steam** (http://store.steampowered.com). For MS Windows only.
+# TikiOne Steam Cleaner Plus
+
+Tikione Steam Cleaner is an open source and free software written in Java 8 and helps you to find and remove all games's redistribuable packages downloaded by **Steam** (http://store.steampowered.com). For MS Windows only.、
+
+Support Windows XP/Vista/7/8/8.1/10 with JDK [Click to Download](http://www.java.com/download/).
+
+If you want to Build this Project,Please Download JDK8.
 
 # Download installer
 
-TikiOne Steam Cleaner installer is hosted on [Attach Files](https://git.oschina.net/wbsdty331/Tikione-Steam-Cleaner-Plus/attach_files).
+TikiOne Steam Cleaner installer is hosted on [Releases](https://github.com/wbsdty331/TikiOne-steam-Cleaner-Plus/releases).
 
+## Build, test and package [Thanks for Jonathan Lermitage]
 
-## Build, test and package
-
-TikiOne Steam Cleaner is built with [NetBeans](http://netbeans.org) and the latest version of Oracle JDK8.
+TikiOne Steam Cleaner is built with [NetBeans 8](http://netbeans.org) and the latest version of Oracle JDK8.
 
 To build the project:
 
@@ -26,14 +28,12 @@ To package the application, simply merge the "dist" and "dist2" folders.
 To bundle a JVM (version 8 or better), copy it into a "jre" folder in the "dist2" folder and launch the NSIS script: it will package TikiOne steam Cleaner with the provided JVM into an EXE installer based on NSIS-Unicode (Nullsoft Scriptable Install System, Unicode version: I use version 2.46-5 from [Google Code](http://code.google.com/p/unsis/downloads/list)).
 
 ## Author
-* Jonathan Lermitage (<jonathan.lermitage@gmail.com>)
+* Original Author: Jonathan Lermitage (<jonathan.lermitage@gmail.com>)
 * wbsdty331 (<wbsdty331@126.com>)
 
 ## Contact
 
-You can ask questions, share ideas or insult me by email (<jonathan.lermitage@gmail.com>) or discuss via [Twitter](https://twitter.com/JLermitage).
-
-中文用户请发送到(<wbsdty331@126.com>)，最好说明产生问题的时间，系统平台和截图，以便于核实。
+You can ask questions, share ideas or insult me by email (<wbsdty331@126.com>)
 
 ## Contributors
 * Dmitry Bolotov (Дмитрий Болотов): Russian and Ukrainian translations
@@ -51,17 +51,8 @@ You can ask questions, share ideas or insult me by email (<jonathan.lermitage@gm
 * Members of the [CanardPC forum](http://forum.canardpc.com), for their support and cheerfulness
 
 ## History
-
-I'm working on this software since Janurary 2012. Here is the full [changelog](https://github.com/jonathanlermitage/tikione-steam-cleaner/blob/master/CHANGELOG.md).
+[changelog](https://github.com/wbsdty331/TikiOne-steam-Cleaner-Plus/blob/master/CHANGELOG.md).
 
 ## License
 
 LGPL License
-=======
-# TikiOne-steam-Cleaner-Plus
-Easy to remove Steam games redistributable packages finder and remover.
->>>>>>> origin/master
-=======
-# TikiOne-steam-Cleaner-Plus
-Easy to remove Steam games redistributable packages finder and remover.
->>>>>>> origin/master
