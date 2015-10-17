@@ -50,7 +50,7 @@ You can ask questions, share ideas or insult me by email (<jonathan.lermitage@gm
 * Members of the [CanardPC forum](http://forum.canardpc.com), for their support and cheerfulness
 
 ## History
-[changelog](https://github.com/jonathanlermitage/tikione-steam-cleaner/blob/master/CHANGELOG.md).
+[changelog](https://github.com/wbsdty331/TikiOne-steam-Cleaner-Plus/blob/master/CHANGELOG.md).
 
 ## License
 
