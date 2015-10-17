@@ -111,8 +111,6 @@ public class JDialogDeletionDirect extends JDialog {
         setTitle(translation.getString(Translation.SEC_DELETE, "title"));
         jButtonClose.setText(translation.getString(Translation.SEC_DELETE, "button.close"));
         jTextAreaDeletionLog.setText(translation.getString(Translation.SEC_DELETE, "info.title"));
-        jButtonPaypalDonation.setToolTipText("<html><body>" + translation.getString(Translation.SEC_WABOUT, "icon.donate")
-                + "<br><font color=\"blue\">http://sourceforge.net/p/tikione/donate/</font></body></html>");
     }
 
     @SuppressWarnings("AssignmentToCollectionOrArrayFieldFromParameter")
@@ -133,7 +131,6 @@ public class JDialogDeletionDirect extends JDialog {
         jScrollPane1 = new JScrollPane();
         jTextAreaDeletionLog = new JTextArea();
         jButtonClose = new JButton();
-        jButtonPaypalDonation = new JButton();
 
         setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
 
@@ -154,19 +151,6 @@ public class JDialogDeletionDirect extends JDialog {
             }
         });
 
-        jButtonPaypalDonation.setBackground(new Color(255, 255, 255));
-        jButtonPaypalDonation.setIcon(new ImageIcon(getClass().getResource("/fr/tikione/steam/cleaner/gui/icons/paypal_donate_btn.png"))); // NOI18N
-        jButtonPaypalDonation.setToolTipText("");
-        jButtonPaypalDonation.setBorder(null);
-        jButtonPaypalDonation.setBorderPainted(false);
-        jButtonPaypalDonation.setCursor(new Cursor(Cursor.HAND_CURSOR));
-        jButtonPaypalDonation.setFocusable(false);
-        jButtonPaypalDonation.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent evt) {
-                jButtonPaypalDonationActionPerformed(evt);
-            }
-        });
-
         GroupLayout jPanel1Layout = new GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(jPanel1Layout.createParallelGroup(Alignment.LEADING)
@@ -175,8 +159,7 @@ public class JDialogDeletionDirect extends JDialog {
                 .addGroup(jPanel1Layout.createParallelGroup(Alignment.LEADING)
                     .addComponent(jScrollPane1, GroupLayout.DEFAULT_SIZE, 871, Short.MAX_VALUE)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jButtonPaypalDonation)
-                        .addPreferredGap(ComponentPlacement.RELATED, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGap(0, 0, Short.MAX_VALUE)
                         .addComponent(jButtonClose)))
                 .addContainerGap())
         );
@@ -184,10 +167,8 @@ public class JDialogDeletionDirect extends JDialog {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jScrollPane1, GroupLayout.DEFAULT_SIZE, 270, Short.MAX_VALUE)
-                .addPreferredGap(ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(Alignment.LEADING)
-                    .addComponent(jButtonClose, Alignment.TRAILING)
-                    .addComponent(jButtonPaypalDonation, Alignment.TRAILING))
+                .addGap(8, 8, 8)
+                .addComponent(jButtonClose)
                 .addContainerGap())
         );
 
@@ -209,12 +190,8 @@ public class JDialogDeletionDirect extends JDialog {
         this.dispose();
     }//GEN-LAST:event_jButtonCloseActionPerformed
 
-    private void jButtonPaypalDonationActionPerformed(ActionEvent evt) {//GEN-FIRST:event_jButtonPaypalDonationActionPerformed
-        UpdateManager.extBrowser("http://sourceforge.net/p/tikione/donate/");
-    }//GEN-LAST:event_jButtonPaypalDonationActionPerformed
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private JButton jButtonClose;
-    private JButton jButtonPaypalDonation;
     private JPanel jPanel1;
     private JScrollPane jScrollPane1;
     private JTextArea jTextAreaDeletionLog;

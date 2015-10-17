@@ -310,15 +310,15 @@ public class JDialogOptionsTabs extends JDialog {
                         .addGroup(jPanelP0Layout.createParallelGroup(Alignment.LEADING)
                             .addGroup(jPanelP0Layout.createSequentialGroup()
                                 .addComponent(jLabelSelectLang, GroupLayout.PREFERRED_SIZE, 128, GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(ComponentPlacement.UNRELATED)
-                                .addComponent(jComboBoxLang, GroupLayout.PREFERRED_SIZE, 198, GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(ComponentPlacement.RELATED)
+                                .addComponent(jComboBoxLang, GroupLayout.PREFERRED_SIZE, 247, GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanelP0Layout.createSequentialGroup()
                                 .addComponent(jLabeSearchlMaxDepth)
                                 .addPreferredGap(ComponentPlacement.RELATED)
                                 .addComponent(jComboBoxSearchlMaxDepth, GroupLayout.PREFERRED_SIZE, 42, GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
                                 .addComponent(jCheckBoxCheckForUpdatesAtStartup)))
-                        .addGap(0, 92, Short.MAX_VALUE)))
+                        .addGap(0, 227, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         jPanelP0Layout.setVerticalGroup(jPanelP0Layout.createParallelGroup(Alignment.LEADING)
@@ -334,7 +334,7 @@ public class JDialogOptionsTabs extends JDialog {
                     .addComponent(jLabeSearchlMaxDepth))
                 .addGap(18, 18, 18)
                 .addComponent(jLabelDescP0, GroupLayout.PREFERRED_SIZE, 117, GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(24, Short.MAX_VALUE))
+                .addContainerGap(158, Short.MAX_VALUE))
         );
 
         jTabbedPaneOpts.addTab("  General  ", jPanelP0);

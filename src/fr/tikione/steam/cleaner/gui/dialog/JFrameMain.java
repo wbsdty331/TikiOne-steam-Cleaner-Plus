@@ -201,7 +201,7 @@ public class JFrameMain extends JFrame {
 		
 		jButtonStopSearch.setVisible(false);
 		jButtonGithub.setToolTipText("<html><body>" + "TikiOne <b>GitHub</b>"
-				+ "<br><font color=\"blue\">https://github.com/jonathanlermitage/tikione-steam-cleaner</font></body></html>");
+				+ "<br><font color=\"blue\">https://github.com/wbsdty331/TikiOne-steam-Cleaner-Plus</font></body></html>");
 
 	}
 
@@ -445,14 +445,14 @@ public class JFrameMain extends JFrame {
 
         setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
         setBackground(new Color(255, 255, 255));
-        addWindowListener(new WindowAdapter() {
-            public void windowClosing(WindowEvent evt) {
-                formWindowClosing(evt);
-            }
-        });
         addWindowStateListener(new WindowStateListener() {
             public void windowStateChanged(WindowEvent evt) {
                 formWindowStateChanged(evt);
+            }
+        });
+        addWindowListener(new WindowAdapter() {
+            public void windowClosing(WindowEvent evt) {
+                formWindowClosing(evt);
             }
         });
 
@@ -557,7 +557,7 @@ public class JFrameMain extends JFrame {
             .addGroup(jPanelListLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanelListLayout.createParallelGroup(Alignment.LEADING)
-                    .addComponent(jScrollPane1)
+                    .addComponent(jScrollPane1, GroupLayout.DEFAULT_SIZE, 610, Short.MAX_VALUE)
                     .addGroup(jPanelListLayout.createSequentialGroup()
                         .addComponent(jButtonReloadRedistList)
                         .addPreferredGap(ComponentPlacement.RELATED)
@@ -621,20 +621,18 @@ public class JFrameMain extends JFrame {
                     .addComponent(jLabelSteamDir)
                     .addComponent(jLabelCustomFolders, GroupLayout.PREFERRED_SIZE, 104, GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(ComponentPlacement.RELATED)
+                .addGroup(jPanelMainLayout.createParallelGroup(Alignment.LEADING, false)
+                    .addComponent(jTextFieldSteamDir)
+                    .addComponent(jScrollPane2, GroupLayout.DEFAULT_SIZE, 254, Short.MAX_VALUE))
+                .addPreferredGap(ComponentPlacement.UNRELATED)
                 .addGroup(jPanelMainLayout.createParallelGroup(Alignment.LEADING)
+                    .addComponent(jButtonRemoveCustomFolder, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButtonAddCustomFolder, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanelMainLayout.createSequentialGroup()
-                        .addComponent(jScrollPane2, GroupLayout.PREFERRED_SIZE, 254, GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(ComponentPlacement.UNRELATED)
-                        .addGroup(jPanelMainLayout.createParallelGroup(Alignment.LEADING)
-                            .addComponent(jButtonRemoveCustomFolder, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButtonAddCustomFolder, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(jPanelMainLayout.createSequentialGroup()
-                        .addComponent(jTextFieldSteamDir, GroupLayout.PREFERRED_SIZE, 280, GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(jButtonManualSteamDirSearch, GroupLayout.PREFERRED_SIZE, 87, GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(ComponentPlacement.UNRELATED)
-                        .addComponent(jButtonLocateSteamDir, GroupLayout.PREFERRED_SIZE, 100, GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(29, Short.MAX_VALUE))
+                        .addComponent(jButtonManualSteamDirSearch)
+                        .addPreferredGap(ComponentPlacement.RELATED)
+                        .addComponent(jButtonLocateSteamDir, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                .addGap(36, 36, 36))
         );
         jPanelMainLayout.setVerticalGroup(jPanelMainLayout.createParallelGroup(Alignment.LEADING)
             .addGroup(jPanelMainLayout.createSequentialGroup()
@@ -795,23 +793,12 @@ public class JFrameMain extends JFrame {
             File q=new File(folder.getAbsolutePath() + "\\steam.exe"); 
             if(!q.exists()) {
                 JOptionPane.showMessageDialog(null, translation.getString(Translation.SEC_WMAIN, "errmsg.notsteamdir"), "Oops!",JOptionPane.ERROR_MESSAGE);
-                
-                
-     
-     
-             
                 jTextFieldSteamDir.setText("");    
                 fSteamDir = new File((""));
             }else {
                 jTextFieldSteamDir.setText(folder.getAbsolutePath());
                 fSteamDir = new File(jTextFieldSteamDir.getText());                    
                     }
-             			//if (folder != null) {
-				
-			//} else {
-				//jTextFieldSteamDir.setText("");                     
-      
-	    //   }
 }                    
                         
     }//GEN-LAST:event_jButtonManualSteamDirSearchActionPerformed
@@ -945,7 +932,7 @@ public class JFrameMain extends JFrame {
     }//GEN-LAST:event_jButtonStopSearchActionPerformed
 
     private void jButtonGithubActionPerformed(ActionEvent evt) {//GEN-FIRST:event_jButtonGithubActionPerformed
-		UpdateManager.extBrowser("https://github.com/jonathanlermitage/tikione-steam-cleaner");
+		UpdateManager.extBrowser("https://github.com/wbsdty331/TikiOne-steam-Cleaner-Plus");
     }//GEN-LAST:event_jButtonGithubActionPerformed
 
     private void jTableRedistListMouseClicked(MouseEvent evt) {//GEN-FIRST:event_jTableRedistListMouseClicked

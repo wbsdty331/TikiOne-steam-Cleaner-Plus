@@ -243,6 +243,6 @@ public class Config {
     public String getLatestVersionUrl()
             throws CharConversionException,
             InfinitiveLoopException {
-        return "https://git.oschina.net/wbsdty331/Tikione-Steam-Cleaner-Plus/raw/master/uc/latest_version.txt";
+        return "https://raw.githubusercontent.com/wbsdty331/TikiOne-steam-Cleaner-Plus/master/uc/latest_version.txt";
     }
 }
