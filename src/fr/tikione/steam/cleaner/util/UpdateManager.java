@@ -23,7 +23,7 @@ public class UpdateManager {
 	private static final String DOWNLOAD_BASE = "https://github.com/wbsdty331/TikiOne-steam-Cleaner-Plus/releases";
 	
 	
-	private static final String DOWNLOAD_PORTABLE_NOJRE = DOWNLOAD_BASE + "v%s/TikiOne.Steam.Cleaner.Plus.%s.Portable.NoJRE.zip";
+	private static final String DOWNLOAD_PORTABLE_NOJRE = DOWNLOAD_BASE + "v%s/TikiOne.Steam.Cleaner.Plus.%s.zip";
 
 	/** Suppresses default constructor, ensuring non-instantiability. */
 	private UpdateManager() {

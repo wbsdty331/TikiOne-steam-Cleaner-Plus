@@ -27,10 +27,7 @@ public class Main {
 	 * @param args command-line arguments.
 	 */
 	public static void main(String[] args) {
-
-		// Detect portable mode.
-		ARG_PORTABLE = Arrays.asList(args).contains("enablePortablemode");
-
+		
 		// Detect bundled JVM.
 		File jre = new File("./jre/");
 		BUNDLED_JVM = jre.isDirectory() && jre.exists();
@@ -39,7 +36,6 @@ public class Main {
 		Log.info("Application started; version is " + Version.VERSION
 				+ "; default encoding is " + CONF_ENCODING
 				+ "; default locale is " + SYS_LOCALE.toString()
-				+ "; portableMode " + (ARG_PORTABLE ? "enabled" : "disabled")
 				+ "; bundledJVM " + (BUNDLED_JVM ? "present" : "not found, will use system JVM"));
 		try {
 			javax.swing.UIManager.setLookAndFeel("com.sun.java.swing.plaf.windows.WindowsLookAndFeel");

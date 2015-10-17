@@ -198,17 +198,11 @@ public class JFrameMain extends JFrame {
 		jButtonAddCustomFolder.setText(translation.getString(Translation.SEC_WMAIN, "button.add.custom.folder"));
 		jButtonRemoveCustomFolder.setText(translation.getString(Translation.SEC_WMAIN, "button.rem.custom.folder"));
 		jLabelCustomFolders.setText("<html>" + translation.getString(Translation.SEC_WMAIN, "label.custom.folders.list") + "</html>");
-		jButtonSocialFacebook.setToolTipText("<html><body>" + translation.getString(Translation.SEC_WMAIN, "icon.social.facebook")
-				+ "<br><font color=\"blue\">https://www.facebook.com/jonathan.lermitage</font></body></html>");
+		
 		jButtonStopSearch.setVisible(false);
 		jButtonGithub.setToolTipText("<html><body>" + "TikiOne <b>GitHub</b>"
 				+ "<br><font color=\"blue\">https://github.com/jonathanlermitage/tikione-steam-cleaner</font></body></html>");
-		jButtonReddit.setToolTipText("<html><body>" + "TikiOne <b>Reddit</b>"
-				+ "<br><font color=\"blue\">"
-				+ "https://www.reddit.com/r/gaming/comments/3ahunc/tikione_steam_cleaner_will_support_gog_and_origin/"
-				+ "</font></body></html>");
-		jButtonTwitter.setToolTipText("<html><body>" + "TikiOne <b>Twitter</b>"
-				+ "<br><font color=\"blue\">https://twitter.com/JLermitage</font></body></html>");
+
 	}
 
 	/**
@@ -447,10 +441,7 @@ public class JFrameMain extends JFrame {
         jButtonToolbarAbout = new JButton();
         jPanelAppVersion = new JPanel();
         jLabelAppVersion = new JLabel();
-        jButtonSocialFacebook = new JButton();
         jButtonGithub = new JButton();
-        jButtonTwitter = new JButton();
-        jButtonReddit = new JButton();
 
         setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
         setBackground(new Color(255, 255, 255));
@@ -487,7 +478,8 @@ public class JFrameMain extends JFrame {
         });
 
         jButtonManualSteamDirSearch.setFont(new Font("Dialog", 1, 11)); // NOI18N
-        jButtonManualSteamDirSearch.setText("...");
+        jButtonManualSteamDirSearch.setText("Browse...");
+        jButtonManualSteamDirSearch.setToolTipText("");
         jButtonManualSteamDirSearch.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent evt) {
                 jButtonManualSteamDirSearchActionPerformed(evt);
@@ -570,9 +562,9 @@ public class JFrameMain extends JFrame {
                         .addComponent(jButtonReloadRedistList)
                         .addPreferredGap(ComponentPlacement.RELATED)
                         .addComponent(jButtonStopSearch, GroupLayout.PREFERRED_SIZE, 29, GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(ComponentPlacement.RELATED, 311, Short.MAX_VALUE)
-                        .addComponent(jButtonRemoveRedistItemsFromDisk)
-                        .addContainerGap())))
+                        .addPreferredGap(ComponentPlacement.RELATED, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jButtonRemoveRedistItemsFromDisk)))
+                .addContainerGap())
         );
         jPanelListLayout.setVerticalGroup(jPanelListLayout.createParallelGroup(Alignment.LEADING)
             .addGroup(Alignment.TRAILING, jPanelListLayout.createSequentialGroup()
@@ -582,7 +574,8 @@ public class JFrameMain extends JFrame {
                     .addComponent(jButtonRemoveRedistItemsFromDisk)
                     .addComponent(jButtonStopSearch))
                 .addPreferredGap(ComponentPlacement.RELATED)
-                .addComponent(jScrollPane1, GroupLayout.DEFAULT_SIZE, 128, Short.MAX_VALUE))
+                .addComponent(jScrollPane1, GroupLayout.PREFERRED_SIZE, 141, GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jLabelCustomFolders.setFont(new Font("Dialog", 0, 13)); // NOI18N
@@ -634,15 +627,14 @@ public class JFrameMain extends JFrame {
                         .addPreferredGap(ComponentPlacement.UNRELATED)
                         .addGroup(jPanelMainLayout.createParallelGroup(Alignment.LEADING)
                             .addComponent(jButtonRemoveCustomFolder, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButtonAddCustomFolder, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
-                        .addContainerGap(GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(jButtonAddCustomFolder, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanelMainLayout.createSequentialGroup()
-                        .addComponent(jTextFieldSteamDir)
+                        .addComponent(jTextFieldSteamDir, GroupLayout.PREFERRED_SIZE, 280, GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(jButtonManualSteamDirSearch, GroupLayout.PREFERRED_SIZE, 87, GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(ComponentPlacement.UNRELATED)
-                        .addComponent(jButtonManualSteamDirSearch, GroupLayout.PREFERRED_SIZE, 33, GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(ComponentPlacement.RELATED)
-                        .addComponent(jButtonLocateSteamDir)
-                        .addGap(98, 98, 98))))
+                        .addComponent(jButtonLocateSteamDir, GroupLayout.PREFERRED_SIZE, 100, GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(29, Short.MAX_VALUE))
         );
         jPanelMainLayout.setVerticalGroup(jPanelMainLayout.createParallelGroup(Alignment.LEADING)
             .addGroup(jPanelMainLayout.createSequentialGroup()
@@ -650,18 +642,17 @@ public class JFrameMain extends JFrame {
                 .addGroup(jPanelMainLayout.createParallelGroup(Alignment.BASELINE)
                     .addComponent(jLabelSteamDir)
                     .addComponent(jTextFieldSteamDir, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButtonLocateSteamDir)
-                    .addComponent(jButtonManualSteamDirSearch))
-                .addPreferredGap(ComponentPlacement.UNRELATED)
+                    .addComponent(jButtonManualSteamDirSearch, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButtonLocateSteamDir))
+                .addGap(15, 15, 15)
                 .addGroup(jPanelMainLayout.createParallelGroup(Alignment.LEADING)
+                    .addComponent(jLabelCustomFolders, GroupLayout.PREFERRED_SIZE, 81, GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanelMainLayout.createSequentialGroup()
                         .addComponent(jButtonAddCustomFolder, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(ComponentPlacement.RELATED)
                         .addComponent(jButtonRemoveCustomFolder, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanelMainLayout.createParallelGroup(Alignment.LEADING, false)
-                        .addComponent(jLabelCustomFolders, GroupLayout.DEFAULT_SIZE, 81, Short.MAX_VALUE)
-                        .addComponent(jScrollPane2, GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)))
-                .addGap(18, 18, 18)
+                    .addComponent(jScrollPane2, GroupLayout.PREFERRED_SIZE, 71, GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 22, Short.MAX_VALUE)
                 .addComponent(jPanelList, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
         );
 
@@ -725,17 +716,6 @@ public class JFrameMain extends JFrame {
             .addComponent(jLabelAppVersion, GroupLayout.DEFAULT_SIZE, 25, Short.MAX_VALUE)
         );
 
-        jButtonSocialFacebook.setIcon(new ImageIcon(getClass().getResource("/fr/tikione/steam/cleaner/gui/icons/social_facebook.png"))); // NOI18N
-        jButtonSocialFacebook.setToolTipText("");
-        jButtonSocialFacebook.setContentAreaFilled(false);
-        jButtonSocialFacebook.setCursor(new Cursor(Cursor.DEFAULT_CURSOR));
-        jButtonSocialFacebook.setFocusPainted(false);
-        jButtonSocialFacebook.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent evt) {
-                jButtonSocialFacebookActionPerformed(evt);
-            }
-        });
-
         jButtonGithub.setIcon(new ImageIcon(getClass().getResource("/fr/tikione/steam/cleaner/gui/icons/social_github.png"))); // NOI18N
         jButtonGithub.setToolTipText("");
         jButtonGithub.setContentAreaFilled(false);
@@ -747,56 +727,23 @@ public class JFrameMain extends JFrame {
             }
         });
 
-        jButtonTwitter.setIcon(new ImageIcon(getClass().getResource("/fr/tikione/steam/cleaner/gui/icons/social_twitter.png"))); // NOI18N
-        jButtonTwitter.setToolTipText("");
-        jButtonTwitter.setContentAreaFilled(false);
-        jButtonTwitter.setCursor(new Cursor(Cursor.DEFAULT_CURSOR));
-        jButtonTwitter.setFocusPainted(false);
-        jButtonTwitter.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent evt) {
-                jButtonTwitterActionPerformed(evt);
-            }
-        });
-
-        jButtonReddit.setIcon(new ImageIcon(getClass().getResource("/fr/tikione/steam/cleaner/gui/icons/social_reddit.png"))); // NOI18N
-        jButtonReddit.setToolTipText("");
-        jButtonReddit.setContentAreaFilled(false);
-        jButtonReddit.setCursor(new Cursor(Cursor.DEFAULT_CURSOR));
-        jButtonReddit.setFocusPainted(false);
-        jButtonReddit.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent evt) {
-                jButtonRedditActionPerformed(evt);
-            }
-        });
-
         GroupLayout layout = new GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(layout.createParallelGroup(Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jToolBarMain, GroupLayout.PREFERRED_SIZE, 274, GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(ComponentPlacement.RELATED, 195, Short.MAX_VALUE)
+                .addComponent(jToolBarMain, GroupLayout.PREFERRED_SIZE, 93, GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(ComponentPlacement.RELATED, 395, Short.MAX_VALUE)
                 .addComponent(jButtonGithub, GroupLayout.PREFERRED_SIZE, 29, GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(ComponentPlacement.RELATED)
-                .addComponent(jButtonReddit, GroupLayout.PREFERRED_SIZE, 29, GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(ComponentPlacement.RELATED)
-                .addComponent(jButtonTwitter, GroupLayout.PREFERRED_SIZE, 29, GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(ComponentPlacement.RELATED)
-                .addComponent(jButtonSocialFacebook, GroupLayout.PREFERRED_SIZE, 25, GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(ComponentPlacement.RELATED)
                 .addComponent(jPanelAppVersion, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanelMain, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+            .addComponent(jPanelMain, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(layout.createParallelGroup(Alignment.LEADING)
             .addGroup(Alignment.TRAILING, layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(Alignment.LEADING)
                     .addComponent(jToolBarMain, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
                     .addComponent(jPanelAppVersion, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButtonSocialFacebook)
-                    .addComponent(jButtonGithub)
-                    .addComponent(jButtonTwitter)
-                    .addComponent(jButtonReddit))
+                    .addComponent(jButtonGithub))
                 .addGap(10, 10, 10)
                 .addComponent(jPanelMain, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -971,10 +918,6 @@ public class JFrameMain extends JFrame {
 		aboutFrame.setVisible(true);
     }//GEN-LAST:event_jButtonToolbarAboutActionPerformed
 
-    private void jButtonSocialFacebookActionPerformed(ActionEvent evt) {//GEN-FIRST:event_jButtonSocialFacebookActionPerformed
-		UpdateManager.extBrowser("https://www.facebook.com/jonathan.lermitage");
-    }//GEN-LAST:event_jButtonSocialFacebookActionPerformed
-
     private void jButtonAddCustomFolderActionPerformed(ActionEvent evt) {//GEN-FIRST:event_jButtonAddCustomFolderActionPerformed
 		JFileChooser dialogue = new JFileChooser();
 		dialogue.setMultiSelectionEnabled(false);
@@ -1005,14 +948,6 @@ public class JFrameMain extends JFrame {
 		UpdateManager.extBrowser("https://github.com/jonathanlermitage/tikione-steam-cleaner");
     }//GEN-LAST:event_jButtonGithubActionPerformed
 
-    private void jButtonTwitterActionPerformed(ActionEvent evt) {//GEN-FIRST:event_jButtonTwitterActionPerformed
-		UpdateManager.extBrowser("https://twitter.com/JLermitage");
-    }//GEN-LAST:event_jButtonTwitterActionPerformed
-
-    private void jButtonRedditActionPerformed(ActionEvent evt) {//GEN-FIRST:event_jButtonRedditActionPerformed
-		UpdateManager.extBrowser("https://www.reddit.com/r/gaming/comments/3ahunc/tikione_steam_cleaner_will_support_gog_and_origin/");
-    }//GEN-LAST:event_jButtonRedditActionPerformed
-
     private void jTableRedistListMouseClicked(MouseEvent evt) {//GEN-FIRST:event_jTableRedistListMouseClicked
         memorizeCustomFoldersToConf();
 		recomputeTotalSizeMB();
@@ -1028,16 +963,13 @@ public class JFrameMain extends JFrame {
     private JButton jButtonGithub;
     private JButton jButtonLocateSteamDir;
     private JButton jButtonManualSteamDirSearch;
-    private JButton jButtonReddit;
     private JButton jButtonReloadRedistList;
     private JButton jButtonRemoveCustomFolder;
     private JButton jButtonRemoveRedistItemsFromDisk;
-    private JButton jButtonSocialFacebook;
     private JButton jButtonStopSearch;
     private JButton jButtonToolbarAbout;
     private JButton jButtonToolbarCheckforupdates;
     private JButton jButtonToolbarOptions;
-    private JButton jButtonTwitter;
     private JLabel jLabelAppVersion;
     private JLabel jLabelCustomFolders;
     private JLabel jLabelSteamDir;

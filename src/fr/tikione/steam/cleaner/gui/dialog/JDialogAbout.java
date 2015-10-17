@@ -53,13 +53,6 @@ public class JDialogAbout extends JDialog {
             jTextAreaMessage.setText(
                     translation.getString(Translation.SEC_WABOUT, "author")
                     + "\r\n"
-                    + translation.getString(Translation.SEC_WABOUT, "website1")
-                    + "\r\n"
-                    + translation.getString(Translation.SEC_WABOUT, "website2")
-                   
-                    + "\r\n"
-                    + "Steam : http://steamcommunity.com/groups/tikionesteamcleanerusers\r\n"
-                    + "Facebook : http://www.facebook.com/tikione.steamcleaner\r\n\r\n"
                     + translation.getString(Translation.SEC_WABOUT, "dev")
                     + "\r\n"
                     + translation.getString(Translation.SEC_WABOUT, "dep1"));
@@ -70,8 +63,7 @@ public class JDialogAbout extends JDialog {
 
     private void initTranslateComponents(Translation translation) {
         jButtonClose.setText(translation.getString(Translation.SEC_WABOUT, "button.close"));
-        jButtonPaypalDonation.setToolTipText("<html><body>" + translation.getString(Translation.SEC_WABOUT, "icon.donate")
-                + "<br><font color=\"blue\">http://sourceforge.net/p/tikione/donate/</font></body></html>");
+        
     }
 
     /**
@@ -87,7 +79,6 @@ public class JDialogAbout extends JDialog {
         jSeparator1 = new JSeparator();
         jButtonClose = new JButton();
         jLabelAbout = new JLabel();
-        jButtonPaypalDonation = new JButton();
 
         setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
         setResizable(false);
@@ -111,19 +102,6 @@ public class JDialogAbout extends JDialog {
 
         jLabelAbout.setFont(new Font("Dialog", 0, 13)); // NOI18N
 
-        jButtonPaypalDonation.setBackground(new Color(255, 255, 255));
-        jButtonPaypalDonation.setIcon(new ImageIcon(getClass().getResource("/fr/tikione/steam/cleaner/gui/icons/paypal_donate_btn.png"))); // NOI18N
-        jButtonPaypalDonation.setToolTipText("");
-        jButtonPaypalDonation.setBorder(null);
-        jButtonPaypalDonation.setBorderPainted(false);
-        jButtonPaypalDonation.setCursor(new Cursor(Cursor.HAND_CURSOR));
-        jButtonPaypalDonation.setFocusable(false);
-        jButtonPaypalDonation.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent evt) {
-                jButtonPaypalDonationActionPerformed(evt);
-            }
-        });
-
         GroupLayout jPanel1Layout = new GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(jPanel1Layout.createParallelGroup(Alignment.LEADING)
@@ -140,20 +118,17 @@ public class JDialogAbout extends JDialog {
                             .addComponent(jButtonClose, Alignment.TRAILING)
                             .addGroup(Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                                 .addComponent(jLabelAbout, GroupLayout.PREFERRED_SIZE, 315, GroupLayout.PREFERRED_SIZE)
-                                .addGap(194, 194, 194)
-                                .addComponent(jButtonPaypalDonation)))))
+                                .addGap(267, 267, 267)))))
                 .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(jPanel1Layout.createParallelGroup(Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(Alignment.LEADING)
-                    .addComponent(jButtonPaypalDonation)
-                    .addComponent(jLabelAbout, GroupLayout.PREFERRED_SIZE, 267, GroupLayout.PREFERRED_SIZE))
-                .addGap(11, 11, 11)
-                .addComponent(jTextAreaMessage, GroupLayout.PREFERRED_SIZE, 145, GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jSeparator1, GroupLayout.PREFERRED_SIZE, 10, GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelAbout, GroupLayout.PREFERRED_SIZE, 267, GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(ComponentPlacement.UNRELATED)
+                .addComponent(jTextAreaMessage, GroupLayout.PREFERRED_SIZE, 70, GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(ComponentPlacement.RELATED)
+                .addComponent(jSeparator1, GroupLayout.PREFERRED_SIZE, 14, GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(ComponentPlacement.RELATED)
                 .addComponent(jButtonClose)
                 .addContainerGap())
@@ -165,7 +140,9 @@ public class JDialogAbout extends JDialog {
             .addComponent(jPanel1, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(layout.createParallelGroup(Alignment.LEADING)
-            .addComponent(jPanel1, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         pack();
@@ -175,12 +152,8 @@ public class JDialogAbout extends JDialog {
         this.dispose();
     }//GEN-LAST:event_jButtonCloseActionPerformed
 
-    private void jButtonPaypalDonationActionPerformed(ActionEvent evt) {//GEN-FIRST:event_jButtonPaypalDonationActionPerformed
-        UpdateManager.extBrowser("http://sourceforge.net/p/tikione/donate/");
-    }//GEN-LAST:event_jButtonPaypalDonationActionPerformed
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private JButton jButtonClose;
-    private JButton jButtonPaypalDonation;
     private JLabel jLabelAbout;
     private JPanel jPanel1;
     private JSeparator jSeparator1;
