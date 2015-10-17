@@ -5,7 +5,7 @@ Tikione Steam Cleaner is an open source and free software written in Java 8 and 
 
 # Download installer
 
-TikiOne Steam Cleaner installer is hosted on [GitHub releases](https://github.com/jonathanlermitage/tikione-steam-cleaner/releases).
+TikiOne Steam Cleaner installer is hosted on [Attach Files](https://git.oschina.net/wbsdty331/Tikione-Steam-Cleaner-Plus/attach_files).
 
 
 ## Build, test and package
