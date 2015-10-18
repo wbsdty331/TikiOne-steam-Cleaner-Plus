@@ -11,7 +11,7 @@ If you want to Build this Project,Please Download JDK8.
 
 TikiOne Steam Cleaner installer is hosted on [Releases](https://github.com/wbsdty331/TikiOne-steam-Cleaner-Plus/releases).
 
-## Build, test and package [Thanks for Jonathan Lermitage]
+## Build, test and package 
 
 TikiOne Steam Cleaner is built with [Eclipse](http://www.eclipse.org/) and Oracle JDK8.
 
@@ -32,7 +32,7 @@ Notice: Move "conf" folder with jar!
 
 ## Contact
 
-You can ask questions, share ideas or insult me by email (<wbsdty331@126.com>) & (<imknown@qq.com>)
+Mail to  (<wbsdty331@126.com>) & (<imknown@qq.com>)
 
 ## History
 [changelog](https://github.com/wbsdty331/TikiOne-steam-Cleaner-Plus/blob/master/CHANGELOG.md).
