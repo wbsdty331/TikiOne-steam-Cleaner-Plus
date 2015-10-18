@@ -134,7 +134,7 @@ public class JFrameMain extends JFrame {
 		model = new RedistTableModel(translation); // Model for the (visual) list a detected redistributable packages.
 		initComponents();
 		secondInitComponents(translation);
-		setTitle("TikiOne Steam Cleaner (Original Author:Jonathan Lermitage)");
+		setTitle("TikiOne Steam Cleaner Plus");
 		if (config.getCheckForUpdatesAtStartup()) {
 			checkForUpdates();
 		}
